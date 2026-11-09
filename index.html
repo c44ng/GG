@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WARMHUZZ - Everyday streetwear essentials">
+  <title>WARMHUZZ — Streetwear Store</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">
+    WELCOME TO WARMHUZZ — FIND YOUR EVERYDAY UNIFORM
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="#">warmhuzz<span>®</span></a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#new">NEW ARRIVALS</a>
+      <a href="#shop">SHOP</a>
+      <a href="#categories">CATEGORIES</a>
+      <a href="#story">ABOUT</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle">⌕</button>
+      <button class="cart-button" id="cartToggle">
+        BAG <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="new">
+      <img
+        class="hero-image"
+        src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=2000&q=85"
+        alt="Streetwear fashion"
+      >
+
+      <div class="hero-shade"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow light">WARMHUZZ — NEW SEASON / 001</p>
+
+        <h1>OWN YOUR<br><em>EVERYDAY.</em></h1>
+
+        <p>Everyday essentials. Uncommon attitude.</p>
+
+        <a class="button button-light" href="#shop">
+          EXPLORE COLLECTION <span>↗</span>
+        </a>
+      </div>
+
+      <div class="hero-index">
+        01 / 03 — NEW DROP
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <section class="ticker">
+      <div>
+        BUILT FOR EVERYDAY ✳ MADE TO STAND OUT ✳
+        WARMHUZZ STREET CULTURE ✳ BUILT FOR EVERYDAY ✳
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section products-section" id="shop">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE LATEST ROTATION</p>
+          <h2>NEW & NOTED<span>.</span></h2>
+        </div>
+
+        <a class="text-link" href="#categories">
+          VIEW ALL PRODUCTS ↗
+        </a>
+      </div>
+
+      <div class="filter-row">
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all">ALL</button>
+          <button class="filter" data-filter="tops">TOPS</button>
+          <button class="filter" data-filter="outerwear">OUTERWEAR</button>
+          <button class="filter" data-filter="pants">PANTS</button>
+          <button class="filter" data-filter="accessories">ACCESSORIES</button>
+        </div>
+
+        <label class="sort-label">
+          SORT BY
+          <select id="sortSelect">
+            <option value="featured">Featured</option>
+            <option value="low">Price: low to high</option>
+            <option value="high">Price: high to low</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+
+        <article class="product-card" data-category="tops" data-price="289000">
+          <div class="product-image">
+            <span class="tag">NEW</span>
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=85" alt="Essential tee">
+
+            <button class="quick-add" data-name="Essential Boxy Tee" data-price="289000">
+              ADD TO BAG +
+            </button>
+          </div>
+
+          <div class="product-meta">
+            <div>
+              <h3>ESSENTIAL BOXY TEE</h3>
+              <p>Washed black / Cotton</p>
+            </div>
+            <strong>Rp 289.000</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="outerwear" data-price="649000">
+          <div class="product-image">
+            <span class="tag">BESTSELLER</span>
+            <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=85" alt="Utility jacket">
+
+            <button class="quick-add" data-name="Utility Work Jacket" data-price="649000">
+              ADD TO BAG +
+            </button>
+          </div>
+
+          <div class="product-meta">
+            <div>
+              <h3>UTILITY WORK JACKET</h3>
+              <p>Stone / Heavy twill</p>
+            </div>
+            <strong>Rp 649.000</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="pants" data-price="429000">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1519888289327-1c6c7f2a2c6e?auto=format&fit=crop&w=800&q=85" alt="Cargo pants">
+
+            <button class="quick-add" data-name="Relaxed Cargo Pants" data-price="429000">
+              ADD TO BAG +
+            </button>
+          </div>
+
+          <div class="product-meta">
+            <div>
+              <h3>RELAXED CARGO PANTS</h3>
+              <p>Olive / Relaxed fit</p>
+            </div>
+            <strong>Rp 429.000</strong>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="accessories" data-price="199000">
+          <div class="product-image">
+            <span class="tag">LIMITED</span>
+            <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=85" alt="Daily cap">
+
+            <button class="quick-add" data-name="Daily Logo Cap" data-price="199000">
+              ADD TO BAG +
+            </button>
+          </div>
+
+          <div class="product-meta">
+            <div>
+              <h3>DAILY LOGO CAP</h3>
+              <p>Black / Adjustable</p>
+            </div>
+            <strong>Rp 199.000</strong>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="category-section" id="categories">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FIND YOUR FIT</p>
+          <h2>SHOP BY CATEGORY<span>.</span></h2>
+        </div>
+
+        <p class="heading-note">
+          Pieces that move with you.<br>
+          Style that speaks for you.
+        </p>
+      </div>
+
+      <div class="category-grid">
+
+        <a class="category-card category-large" href="#shop" data-jump="outerwear">
+          <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1100&q=85" alt="Outerwear">
+          <span>01 / OUTERWEAR <b>↗</b></span>
+        </a>
+
+        <a class="category-card" href="#shop" data-jump="tops">
+          <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=85" alt="Tops">
+          <span>02 / TOPS <b>↗</b></span>
+        </a>
+
+        <a class="category-card" href="#shop" data-jump="pants">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85" alt="Pants">
+          <span>03 / BOTTOMS <b>↗</b></span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="manifesto" id="story">
+      <p class="eyebrow light">A LITTLE ABOUT US</p>
+
+      <h2>NOT HERE TO<br>BLEND <em>IN.</em></h2>
+
+      <p>
+        WARMHUZZ is for the ones who make the everyday their own.
+        Thoughtful pieces, effortless fits, and a little extra
+        character in every detail.
+      </p>
+
+      <a class="button button-outline" href="#shop">
+        DISCOVER WARMHUZZ ↗
+      </a>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+
+      <div>
+        <p class="eyebrow">STAY IN THE LOOP</p>
+        <h2>GOOD THINGS<br>LAND IN YOUR INBOX.</h2>
+      </div>
+
+      <form id="newsletterForm">
+        <label for="email">
+          GET FIRST ACCESS TO NEW DROPS & EXCLUSIVE UPDATES.
+        </label>
+
+        <div class="email-field">
+          <input
+            id="email"
+            type="email"
+            placeholder="Your email address"
+            required
+          >
+          <button type="submit">JOIN ↗</button>
+        </div>
+
+        <p class="form-message" id="formMessage"></p>
+      </form>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <a class="logo footer-logo" href="#">warmhuzz<span>®</span></a>
+
+      <p>
+        EVERYDAY UNIFORM.<br>
+        UNCOMMON ATTITUDE.
+      </p>
+
+      <a href="#new" class="back-top">BACK TO TOP ↑</a>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 WARMHUZZ. ALL RIGHTS RESERVED.</span>
+
+      <div>
+        <a href="#story">ABOUT</a>
+        <a href="mailto:hello@warmhuzz.com">CONTACT</a>
+        <a href="#shop">SHOP</a>
+      </div>
+
+      <span>MADE FOR YOUR EVERYDAY.</span>
+    </div>
+
+  </footer>
+
+  <!-- SEARCH -->
+  <div class="search-panel" id="searchPanel">
+    <input id="searchInput" type="search" placeholder="Search products...">
+    <button id="closeSearch">✕</button>
+  </div>
+
+  <!-- CART -->
+  <aside class="cart-drawer" id="cartDrawer">
+
+    <div class="drawer-head">
+      <h2>YOUR BAG <span id="drawerCount">(0)</span></h2>
+      <button id="closeCart">✕</button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Your bag is currently empty.</p>
+    </div>
+
+    <div class="cart-total">
+      <span>SUBTOTAL</span>
+      <strong id="cartTotal">Rp 0</strong>
+    </div>
+
+    <button class="checkout-button" id="checkoutButton">
+      CONTINUE TO CHECKOUT ↗
+    </button>
+
+    <p class="cart-note">
+      Checkout demo — connect a payment provider to accept orders.
+    </p>
+
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
